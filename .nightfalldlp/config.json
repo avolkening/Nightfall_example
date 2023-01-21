@@ -21,3 +21,20 @@ jobs:
     permissions:
       checks: write
       contents: read
+
+{
+  "detectionRules": [
+    {
+      "name": "my rule",
+      "logicalOp": "ANY",
+      "detectors": [
+        {
+          "minNumFindings": 1,
+          "minConfidence": "POSSIBLE",
+          "detectorType": "NIGHTFALL_DETECTOR",
+          "nightfallDetector": "CREDIT_CARD_NUMBER"
+        }
+      ]
+    }
+  ]
+}
