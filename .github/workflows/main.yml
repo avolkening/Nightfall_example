@@ -1,0 +1,2 @@
+- name: Nightfall DLP Action
+  uses: nightfallai/nightfall_dlp_action@v2.1.0
